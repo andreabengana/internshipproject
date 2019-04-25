@@ -108,7 +108,8 @@ text-decoration: none;
 
 .form-control {
     display: block;
-    width: 100%;
+	width: 100%;
+	
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -119,6 +120,12 @@ text-decoration: none;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
 }
 
 #loginbtn{
