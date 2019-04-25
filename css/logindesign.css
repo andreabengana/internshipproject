@@ -11,17 +11,20 @@ height: 100%;
 font-family: 'Numans', sans-serif;
 }
 
+
 .container{
 height: 100%;
 align-content: center;
 }
 
 .card{
-height: 370px;
+height: 360px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
+border: 5px solid white;
+border-radius: 20px;
 }
 
 .social_icon span{
@@ -47,11 +50,15 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color: white;
 color: black;
 border:0 !important;
 }
 
+.inputfield{
+border: 2px solid white;
+background-color: transparent!important;
+}
 input:focus{
 outline: 0 0 0 0  !important;
 box-shadow: 0 0 0 0 !important;
@@ -71,9 +78,11 @@ margin-right: 5px;
 }
 
 .login_btn{
-color: black;
-background-color: #FFC312;
+color: white;
 width: 100px;
+background-color: transparent !important;
+border: 2px solid white;
+border-radius: 20px;
 }
 
 .login_btn:hover{
@@ -82,10 +91,25 @@ background-color: white;
 }
 
 .links{
-color: black;
+color: white;
 }
 
 .links a{
 margin-left: 4px;
+color: white;
+}
+
+.links a:hover{
+margin-left: 4px;
 color: yellow;
+transition: 1s;
+text-decoration: none;
+}
+
+#loginbtn{
+	margin-left: 50px;
+}
+
+#signupbtn{
+	margin-right: 50px;
 }
