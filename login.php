@@ -50,11 +50,11 @@
 					</div>
 					<hr>
 					<div class="form-group">
-						<button type="submit" class="btn float-left login_btn" id="loginbtn" name="loginbtn"> Login </button>
+						<button type="submit" class="btn btn-block" id="loginbtn" name="loginbtn"> Login </button>
 				</form>
-						<a class="btn float-right login_btn" id="signupbtn" href="signup.php"> Signup </a>
 					</div>
 			</div>
+
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
 					<a href="#">Forgot your password?</a>
