@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/8/3/e/198252.jpg');
+background-image: url('resources/loginbackground.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -18,7 +18,7 @@ align-content: center;
 }
 
 .card{
-height: 360px;
+height: 380px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
