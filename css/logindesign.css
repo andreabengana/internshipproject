@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('resources/loginbackground.jpg');
+background-image: url('../resources/loginbackground.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -11,6 +11,9 @@ height: 100%;
 font-family: 'Numans', sans-serif;
 }
 
+input{
+background-color: rgba(0,0,0,0.5) !important;
+}
 
 .container{
 height: 100%;
@@ -77,18 +80,6 @@ margin-left: 15px;
 margin-right: 5px;
 }
 
-.login_btn{
-color: white;
-width: 100px;
-background-color: transparent !important;
-border: 2px solid white;
-border-radius: 20px;
-}
-
-.login_btn:hover{
-color: black;
-background-color: white;
-}
 
 .links{
 color: white;
@@ -134,9 +125,7 @@ input::placeholder {
 }
 
 #loginbtn{
-	margin-left: 50px;
-}
-
-#signupbtn{
-	margin-right: 50px;
+    background-color: transparent!important;
+    border: 2px solid white;
+    color: white;
 }
