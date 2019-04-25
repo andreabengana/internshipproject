@@ -57,7 +57,7 @@
   							<div class="form-row" id="row3">
 									<div class="form-group col-md-12">
   										<label for="username"> Username </label>
-  										<input type="text" name="email" id="username" class="form-control" placeholder="rocketwarrior">
+  										<input type="text" name="username" id="username" class="form-control" placeholder="rocketwarrior">
 									</div>
 									<div class="form-group col-md-6">
   										<label for="password1"> Password </label>
@@ -69,7 +69,7 @@
 									</div>
   							</div>
   							<label for="select1">Sign Up as</label>
-  							<select class="form-control col-md-12" id="select1">
+  							<select class="form-control col-md-12" id="select1" name="position">
  								<option> Staff </option>
  								<option> Manager </option>
  								<option> Admin </option>
