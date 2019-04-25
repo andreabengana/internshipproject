@@ -33,7 +33,7 @@
 				<h3>Login</h3>
 			</div>
 			<div class="card-body">
-				<form action="/includes/signup.inc.php" method="POST">
+				<form action="includes/login.inc.php" method="POST">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -51,10 +51,10 @@
 					</div>
 					<hr>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-left login_btn" id="loginbtn" name="login">	
-						<button class="btn float-right login_btn" id="signupbtn" name="signup" href="signup.php"> Signup </button>
-					</div>
+						<button type="submit" class="btn float-left login_btn" id="loginbtn" name="loginbtn"> Login </button>
 				</form>
+						<a class="btn float-right login_btn" id="signupbtn" name="signup" href="signup.php"> Signup </a>
+					</div>
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
