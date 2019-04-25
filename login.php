@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Name of Project </title>   		
+    <title> Login </title>   		
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -13,7 +13,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
    <!--Made with love by Gerald Anderson -->
    
 	<!--Bootsrap 4 CDN-->
@@ -22,7 +21,7 @@
     <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-	<!--Custom styles-->
+	<!--Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="css/logindesign.css">
 </head>
 <body>
@@ -30,7 +29,7 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header text-center">
-				<h3>Login</h3>
+				<h3>Welcome!</h3>
 			</div>
 			<div class="card-body">
 				<form action="includes/login.inc.php" method="POST">
@@ -53,7 +52,7 @@
 					<div class="form-group">
 						<button type="submit" class="btn float-left login_btn" id="loginbtn" name="loginbtn"> Login </button>
 				</form>
-						<a class="btn float-right login_btn" id="signupbtn" name="signup" href="signup.php"> Signup </a>
+						<a class="btn float-right login_btn" id="signupbtn" href="signup.php"> Signup </a>
 					</div>
 			</div>
 			<div class="card-footer">
