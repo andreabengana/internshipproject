@@ -123,10 +123,9 @@ text-decoration: none;
 }
 
 input::placeholder {
-    color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    font-style: italic;
-  }
+    color: rgb(255, 255, 255)!important;
+    
+}
 
 .card-footer {
     padding: .75rem 1.25rem;
