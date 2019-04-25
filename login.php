@@ -28,8 +28,8 @@
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
-			<div class="card-header text-center">
-				<h3>Welcome!</h3>
+			<div class="brand_logo_container">
+				<img src="resources/agbilogo.png" class="mx-auto d-block" style="height:70px; width: 70px; margin-top: 10px;">
 			</div>
 			<div class="card-body">
 				<form action="includes/login.inc.php" method="POST">
