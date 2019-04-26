@@ -31,7 +31,6 @@ else{
 			else{
 				session_start();
 				$_SESSION['userUid'] = $row['user_uid'];
-
 				header("Location: ../homepage.php");
 			}
 		}
