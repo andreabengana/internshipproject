@@ -13,6 +13,7 @@ font-family: 'Numans', sans-serif;
 
 input{
 background-color: rgba(0,0,0,0.5) !important;
+color: white;
 }
 
 
@@ -61,7 +62,7 @@ border:0 !important;
 
 .inputfield{
 border: 2px solid white;
-
+color: white!important;
 }
 input:focus{
 outline: 0 0 0 0  !important;
@@ -101,12 +102,10 @@ text-decoration: none;
 .form-control {
     display: block;
 	width: 100%;
-	
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: black;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
