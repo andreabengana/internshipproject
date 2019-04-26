@@ -106,6 +106,10 @@ text-decoration: none;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
+<<<<<<< HEAD
+=======
+    color: rgb(255, 255, 255)!important;
+>>>>>>> ffd3de8db60430ebedbd9c6c9bc8d87d30555fb6
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -114,7 +118,7 @@ text-decoration: none;
 }
 
 input::placeholder {
-    color: rgb(255, 255, 255)!important;
+    color: rgb(207, 207, 207)!important;
     
 }
 
