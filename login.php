@@ -1,8 +1,10 @@
 <?php
 session_start();
 
-?>
+/*if(isset($_SESSION['userUid'])){
+	header("Location: homepage.php");*/
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
