@@ -25,7 +25,7 @@ else{
 		mysqli_stmt_execute($stmt);
 		$result = mysqli_stmt_get_result($stmt);
 		if($row = mysqli_fetch_assoc($result)){
-			if(!$row['user_pwd'] === $password){
+			if($row['user_pwd'] !== $password){
 				header("Location: ../login.php?invalidpassword");
 			}
 			else{
@@ -37,6 +37,7 @@ else{
 		}
 		else{
 			header("Location:  ../login.php?nouser");
+			exit();
 		}
 	}
 }
