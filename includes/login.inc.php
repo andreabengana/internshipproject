@@ -30,8 +30,8 @@ else{
 			}
 			else{
 				session_start();
-				$_SESSION['userUid'] = $row['user_uid'];
-				header("Location: ../homepage.php");
+					$_SESSION['userUid'] = $row['user_uid'];
+					header("Location: ../homepage.php");
 			}
 		}
 		else{
