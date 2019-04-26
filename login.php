@@ -36,7 +36,7 @@ if(isset($_SESSION['userUid'])){
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="brand_logo_container">
-				<a href="https://www.youtube.com/watch?v=hlGjBF0hbE4">
+				<a href="https://www.youtube.com/watch?v=bNlVI5MEGtc">
 				<img src="resources/agbilogo.png" class="mx-auto d-block" style="height:70px; width: 70px; margin-top: 10px;">
 				</a>
 			</div>
