@@ -23,7 +23,7 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header text-center">
-				<h2 style="color: white;">Sign up for Content Creator!</h2>
+				<a href="homepage.php" class="btn btn-success float-left">Go Back</a><h2 style="color: white;">Sign up for Content Creator!</h2>
 			</div>
 			<div class="card-body">
 						<form id="form1" action="includes/signup.inc.php" method="POST">
