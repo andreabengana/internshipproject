@@ -1,33 +1,16 @@
 <?php
-session_start();;
+session_start();
+require 'includes/navbar.inc.php';
 
-if (isset($_SESSION['userUid']) && $_SESSION['usertype'] == 'admin') {
-echo
-'<form action="includes/logout.inc.php" method="POST">
-	<button type="submit" class="btn btn-danger" name="logout-btn"> Logout </button>
-</form>';
-echo
-'
-<a href="signup.php">
-<button type="submit" class="btn btn-success" name="addemployee-btn"> Add Employee </button>
-</a>';
+if (!isset($_SESSION['userUid'])) {
+  header("Location: login.php");
 }
-elseif(isset($_SESSION['userUid']) && $_SESSION['usertype'] == 'staff'){
-echo
-'<form action="includes/logout.inc.php" method="POST">
-	<button type="submit" class="btn btn-danger" name="logout-btn"> Logout </button>
-</form>';	
-}
-else{
-	header("Location: login.php");
-}
-
-
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<!-- Meta Tags -->
+  <!-- RICO GARCIA GUMAWA NITO TIBAY TIBAY -->
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title> Home </title>
@@ -36,6 +19,45 @@ else{
 </head>
 <body>
 
-	
+<?php
+
+
+echo "<h1> Welcome!</h1>".$_SESSION['lname'].", ".$_SESSION['fname'];
+if($_SESSION['usertype'] == 'admin'){
+  $managerfname = $_SESSION['mfname'];
+  $managerlname = $_SESSION['mlname'];
+
+
+
+
+
+;
+}
+elseif($_SESSION['usertype'] == 'staff'){
+
+  $managerfname = $_SESSION['mfname'];
+  $managerlname = $_SESSION['mlname'];
+  echo'
+<br><label for="table1"><h3> Managers Details </h3></label>
+<table class="table table-borderless table-light col-lg-6" id="table1">
+  <thead>
+    <tr>     
+      <th scope="col">First Name</th>
+      <th scope="col">Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>'.$managerfname.'</td>
+      <td>'.$managerlname.'</td>
+    </tr>
+  </tbody>
+</table>
+';
+}
+
+
+
+?>
 </body>
 </html>
