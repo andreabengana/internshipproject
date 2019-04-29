@@ -32,6 +32,10 @@ else{
 				session_start();
 					$_SESSION['userUid'] = $row['user_uid'];
 					$_SESSION['usertype'] = $row['user_type'];
+					$_SESSION['mfname'] = $row['manager_fname'];
+					$_SESSION['mlname'] = $row['manager_lname'];
+					$_SESSION['fname'] = $row['user_fname'];
+					$_SESSION['lname'] = $row['user_lname'];
 					header("Location: ../homepage.php");
 			}
 		}
