@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg');
+background-image: url('../resources/loginbackground.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -27,8 +27,7 @@ height: 400px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
-border: 5px solid white;
+background-color: rgba(0,0,0,0.3) !important;
 border-radius: 20px;
 }
 
@@ -130,6 +129,6 @@ input::placeholder {
 
 #loginbtn{
     background-color: transparent!important;
-    border: 2px solid white;
+    border: 0.5px solid white;
     color: white;
 }
