@@ -4,7 +4,10 @@ session_start();
 if(isset($_SESSION['userUid'])){
 	header("Location: homepage.php");
 }
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +39,7 @@ if(isset($_SESSION['userUid'])){
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="brand_logo_container">
-				<a href="https://www.youtube.com/watch?v=bNlVI5MEGtc">
+				<a href="https://andersonbpoinc.com/">
 				<img src="resources/agbilogo.png" class="mx-auto d-block" style="height:70px; width: 70px; margin-top: 10px;">
 				</a>
 			</div>
@@ -59,7 +62,7 @@ if(isset($_SESSION['userUid'])){
 					</div>
 					<hr>
 					<div class="form-group">
-						<button type="submit" class="btn btn-block" id="loginbtn" name="loginbtn"> Login </button>
+						<button type="submit" class="btn btn-block btn-success" name="loginbtn"> Login </button>
 				</form>
 					</div>
 			</div>
