@@ -15,8 +15,11 @@ if (!isset($_SESSION['userUid'])) {
 	<title> Home </title>
 	<link rel="stylesheet" type="text/css" href="css/homepagedesign.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- CSS FOR NAVBAR -->
+  <link rel="stylesheet" type="text/css" href="css/sidebardesign.css">
 </head>
 <body>
+
 <?php
 
 if($_SESSION['usertype'] == 'admin'){
@@ -39,32 +42,36 @@ if($_SESSION['usertype'] == 'admin'){
     echo $row['user_lname'].", ".$row['user_fname']."<br>";
    }*/
 
-  echo '<div class="text-center">
-        <a href="signup.php" class="btn btn-success"> Add Employee </a>
-        </div>
-    ';
+   echo
+   '<div class="d-flex" id="wrapper">
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"> Welcome! '.$_SESSION['fname'].'</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add Employee</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">View Staff</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
+      </div>
+    </div>';
 }
 elseif($_SESSION['usertype'] == 'staff'){
 
-  $managerfname = $_SESSION['mfname'];
-  $managerlname = $_SESSION['mlname'];
-  echo'
-<br><label for="table1"><h3> Managers Details </h3></label>
-<table class="table table-borderless table-light col-lg-6" id="table1">
-  <thead>
-    <tr>     
-      <th scope="col">First Name</th>
-      <th scope="col">Last name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>'.$managerfname.'</td>
-      <td>'.$managerlname.'</td>
-    </tr>
-  </tbody>
-</table>
-';
+  echo
+  '<div class="d-flex" id="wrapper">
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"> Welcome! '.$_SESSION['fname'].' </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+      </div>
+    </div>'
+;
 }
 
 
