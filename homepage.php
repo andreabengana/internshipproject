@@ -62,7 +62,7 @@ elseif($_SESSION['usertype'] == 'staff'){
   echo
   '<div class="d-flex" id="wrapper">
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading"> Welcome! '.$_SESSION['fname'].' </div>
+      <div class="sidebar-heading"> Welcome! '.'<b>'.$_SESSION['fname'].'</b></div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
