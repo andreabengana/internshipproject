@@ -78,14 +78,9 @@ if(!isset($_SESSION['userUid'])){
   										<input type="password" name="password2" id="password2" class="form-control">
 									</div>
   							</div>
-  							<label for="select1">Sign Up as</label>
-  							<select class="form-control col-md-12" id="select1" name="position">
- 								<option> Staff </option>
- 								<option> Manager </option>
- 								<option> Admin </option>
- 								<option> SuperAdmin </option>
-							</select>
-							<br>
+  							<label for="position">Sign Up as</label>
+  							<input type="text"  class="form-control col-md-12" id="position" name="position" value="Employee" disabled>
+ 								<br>
  								<button type="submit" class="btn btn-lg btn-success btn-block" name="signup-btn">Add Employee</button>
 						</form>
 			</div>
