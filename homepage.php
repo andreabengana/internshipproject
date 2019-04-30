@@ -9,8 +9,7 @@ if (!isset($_SESSION['userUid'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Meta Tags -->
-  <!-- RICO GARCIA GUMAWA NITO TIBAY TIBAY -->
+	<!-- Meta Tags --> 
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title> Home </title>
@@ -24,14 +23,29 @@ if (!isset($_SESSION['userUid'])) {
 
 echo "<h1> Welcome!</h1>".$_SESSION['lname'].", ".$_SESSION['fname'];
 if($_SESSION['usertype'] == 'admin'){
-  $managerfname = $_SESSION['mfname'];
-  $managerlname = $_SESSION['mlname'];
+
+  require 'includes/db.inc.php';
+
+  $managerfname = $_SESSION['fname'];
+  $managerlname = $_SESSION['lname'];
+  echo"<br>";
+  echo"<br>";
 
 
+   $sql = "SELECT * FROM users WHERE manager_fname=? AND manager_lname=?;";
+   $stmt = mysqli_stmt_init($conn);
+   mysqli_stmt_prepare($stmt, $sql);
+   mysqli_stmt_bind_param($stmt, "ss", $managerfname, $managerlname);
+   mysqli_stmt_execute($stmt);
+   $result = mysqli_stmt_get_result($stmt);
+   while($row = mysqli_fetch_assoc($result)){
+    echo $row['user_lname'].", ".$row['user_fname']."<br>";
+   }
 
-
-
-;
+  echo '<div class="text-center">
+        <a href="signup.php" class="btn btn-success"> Add Employee </a>
+        </div>
+    ';
 }
 elseif($_SESSION['usertype'] == 'staff'){
 
