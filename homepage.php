@@ -17,9 +17,7 @@ if (!isset($_SESSION['userUid'])) {
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-
 <?php
-echo "<h1> Welcome! </h1>".$_SESSION['lname'].", ".$_SESSION['fname'];
 
 if($_SESSION['usertype'] == 'admin'){
   //wag buburahin to, pang output to ng mga staff if ever
@@ -72,5 +70,6 @@ elseif($_SESSION['usertype'] == 'staff'){
 
 
 ?>
+</div>
 </body>
 </html>
