@@ -5,3 +5,7 @@ nav{
 #logout-btn{
 	margin-left: 100px!important;	
 }
+#navbar{
+	position: fixed;
+	display: none;
+}
