@@ -1,11 +1,11 @@
-nav{
-	width: 100%;
-	background-color: skyblue;
-}
+
 #logout-btn{
 	margin-left: 100px!important;	
 }
 #navbar{
-	position: fixed;
-	display: none;
+  background-color: skyblue;   
+  width: 100%;
+  top: 0px;
+  transition: top 0.3s; 
 }
+
