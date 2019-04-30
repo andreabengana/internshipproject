@@ -19,7 +19,7 @@ if (!isset($_SESSION['userUid'])) {
 <body>
 
 <?php
-
+echo "<h1> Welcome! </h1>".$_SESSION['lname'].", ".$_SESSION['fname'];
 
 if($_SESSION['usertype'] == 'admin'){
   //wag buburahin to, pang output to ng mga staff if ever
