@@ -69,6 +69,7 @@ elseif($_SESSION['usertype'] == 'staff'){
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
       </div>
     </div>'
 ;
