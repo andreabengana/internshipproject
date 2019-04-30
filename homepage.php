@@ -21,10 +21,9 @@ if (!isset($_SESSION['userUid'])) {
 <?php
 
 
-echo "<h1> Welcome!</h1>".$_SESSION['lname'].", ".$_SESSION['fname'];
 if($_SESSION['usertype'] == 'admin'){
-
-  require 'includes/db.inc.php';
+  //wag buburahin to
+  /*require 'includes/db.inc.php';
 
   $managerfname = $_SESSION['fname'];
   $managerlname = $_SESSION['lname'];
@@ -40,7 +39,7 @@ if($_SESSION['usertype'] == 'admin'){
    $result = mysqli_stmt_get_result($stmt);
    while($row = mysqli_fetch_assoc($result)){
     echo $row['user_lname'].", ".$row['user_fname']."<br>";
-   }
+   }*/
 
   echo '<div class="text-center">
         <a href="signup.php" class="btn btn-success"> Add Employee </a>
