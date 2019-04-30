@@ -76,8 +76,6 @@ elseif($_SESSION['usertype'] == 'staff'){
 }
 
 
-
 ?>
-</div>
 </body>
 </html>
