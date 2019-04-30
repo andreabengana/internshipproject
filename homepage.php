@@ -22,7 +22,7 @@ if (!isset($_SESSION['userUid'])) {
 
 
 if($_SESSION['usertype'] == 'admin'){
-  //wag buburahin to
+  //wag buburahin to, pang output to ng mga staff if ever
   /*require 'includes/db.inc.php';
 
   $managerfname = $_SESSION['fname'];
