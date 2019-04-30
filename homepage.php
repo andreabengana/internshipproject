@@ -48,10 +48,9 @@ if($_SESSION['usertype'] == 'admin'){
       <div class="sidebar-heading"> Welcome! '.'<b>'.$_SESSION['fname'].'</b></div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add Employee</a>
-        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add Manager</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">View Staff</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add New Employee</a>
+        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add New Manager</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">View Staff Members</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
         <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
@@ -65,11 +64,9 @@ elseif($_SESSION['usertype'] == 'staff'){
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading"> Welcome! '.'<b>'.$_SESSION['fname'].'</b></div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Templates</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">My Projects</a>
         <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
       </div>
     </div>'
