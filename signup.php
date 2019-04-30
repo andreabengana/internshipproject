@@ -86,7 +86,7 @@ if(!isset($_SESSION['userUid'])){
  								<option> SuperAdmin </option>
 							</select>
 							<br>
- 								<button type="submit" class="btn btn-lg btn-success btn-block" name="signup-btn">Sign Up!</button>
+ 								<button type="submit" class="btn btn-lg btn-success btn-block" name="signup-btn">Add Employee</button>
 						</form>
 			</div>
 		</div>
