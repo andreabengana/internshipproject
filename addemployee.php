@@ -78,7 +78,7 @@ if(!isset($_SESSION['userUid'])){
 									</div>
   							</div>
   							<label for="position">Sign Up as</label>
-  							<select class="form-control" name="position" value="Staff">
+  							<select class="form-control" name="position" value="staff">
                 <option>Staff</option>
                 </select> 								
                 <br>
