@@ -1,6 +1,6 @@
 <?php 
 
-
+include 'ChromePHP.php';
 
 if(isset($_POST['signup-btn'])){
 
@@ -20,7 +20,7 @@ if(empty($fname) || empty($lname) || empty($email) || empty($mfname) || empty($m
 	header("Location: ../addemployee.php?emptyfield");
 }
 else{
-
+	ChromePHP::log('fool');
 }
 }
 
