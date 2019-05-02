@@ -52,11 +52,11 @@ else{
 		mysqli_stmt_store_result($stmt);
 		$result = mysqli_stmt_num_rows($stmt);
 		if($result > 0){
-			header("Location: ../addemployee.php?usernametaken")
+			header("Location: ../addemployee.php?usernametaken");
 			exit();
 		}
 		else{
-			$sql = "INSERT INTO users "
+			$sql = "INSERT INTO users ";
 		}	
 	}	
 }
