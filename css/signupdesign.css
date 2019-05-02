@@ -8,6 +8,7 @@ background-repeat: no-repeat;
 background-position: center;
 height: 100%;
 font-family: 'Numans', sans-serif;
+color: white!important;
 }
 
 
@@ -22,7 +23,6 @@ margin-top: auto;
 margin-bottom: auto;
 width: 800px;
 background-color: rgba(0,0,0,0.4) !important;
-border: 5px solid white;
 border-radius: 20px;
 }
 
@@ -56,7 +56,7 @@ border:0 !important;
 
 .inputfield{
 border: 2px solid white;
-background-color: transparent!important;
+background-color: rgba(0,0,0,0.4) !important;
 }
 
 input:focus{
