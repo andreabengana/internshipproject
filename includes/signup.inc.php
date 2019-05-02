@@ -3,7 +3,7 @@
 
 
 if(isset($_POST['signup-btn'])){
-	include 'db.inc.php';
+	require 'db.inc.php';
 
 
 	$fname = $_POST['fname'];
@@ -40,7 +40,25 @@ elseif($password !== $password2){
 }
 else{
 	$sql = "SELECT user_uid FROM users WHERE user_uid=?";
-	$stmt = mysqli_stmt_prepare($conn);
+	$stmt = mysqli_stmt_init($conn);
+
+	if(!mysqli_stmt_prepare($stmt, $sql)){
+	header("Location: ../addemployee.php?error=sqlerror");
+	exit();
+	}
+	else{
+		mysqli_stmt_bind_param($stmt, "s", $username);
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_store_result($stmt);
+		$result = mysqli_stmt_num_rows($stmt);
+		if($result > 0){
+			header("Location: ../addemployee.php?usernametaken")
+			exit();
+		}
+		else{
+			$sql = "INSERT INTO users "
+		}	
+	}	
 }
 }
 
