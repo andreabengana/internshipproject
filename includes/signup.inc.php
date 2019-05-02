@@ -64,7 +64,7 @@ else{
 				exit();
 			}
 			else{
-				$hashedpwd = password_hash($password, PASSWORD_DEFAULT);
+				$hashedpwd = password_hash($password1, PASSWORD_DEFAULT);
 				mysqli_stmt_bind_param($stmt, "ssssssss", $username, $email, $hashedpwd, $position, $fname, $lname, $mfname, $mlname);
 				mysqli_stmt_execute($stmt);
 				header("Location: ../addemployee.php?employeeadded");
