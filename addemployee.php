@@ -78,8 +78,10 @@ if(!isset($_SESSION['userUid'])){
 									</div>
   							</div>
   							<label for="position">Sign Up as</label>
-  							<input type="text"  class="form-control col-md-12" id="position" name="position" value="Staff" disabled>
- 								<br>
+  							<select class="form-control" name="position" value="Staff">
+                <option>Staff</option>
+                </select> 								
+                <br>
  								<button type="submit" class="btn btn-lg btn-success btn-block" name="signup-btn">Add Employee</button>
 						</form>
 			</div>
