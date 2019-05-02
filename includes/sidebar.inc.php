@@ -28,7 +28,7 @@ if($_SESSION['usertype'] == 'admin'){
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="addemployee.php" class="list-group-item list-group-item-action bg-light">Add New Employee</a>
-        <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add New Manager</a>
+        <a href="addmanager.php" class="list-group-item list-group-item-action bg-light">Add New Manager</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">View Staff Members</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
         <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-danger" style="color: white">Logout</a>
@@ -40,6 +40,7 @@ elseif($_SESSION['usertype'] == 'staff'){
   echo
   '<div class="d-flex" id="wrapper">
     <div class="bg-light border-right" id="sidebar-wrapper">
+          <img src="internshipproject/../resources/agbilogo.png" style="height: 65px; width: 65px; margin-top: 10px;" class="mx-auto d-block">
       <div class="sidebar-heading"> Welcome! '.'<b>'.$_SESSION['fname'].'</b></div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
