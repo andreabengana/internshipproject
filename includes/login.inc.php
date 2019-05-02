@@ -27,7 +27,7 @@ else{
 		if($row = mysqli_fetch_assoc($result)){
 			$dbpassword = $row['user_password'];
 			$pwdCheck = password_verify($password, $dbpassword);
-			if($password !== $dbpassword){
+			if($password !== $dbpassword AND $pwdCheck == false){
 				header("Location: ../login.php?invalidpassword");
 				exit();
 			}
