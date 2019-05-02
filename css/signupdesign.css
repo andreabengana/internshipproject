@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('intenshipproject/resources/loginbackground.jpg');
+background-image: url('../resources/loginbackground.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;

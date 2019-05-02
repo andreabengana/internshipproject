@@ -14,7 +14,7 @@ nav{
   	width: 100%; /* Full width */
 }
 .header-desktop {
-    background: #f5f5f5;
+    background-color: #83d3f3!important;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
