@@ -23,7 +23,7 @@ if($_SESSION['usertype'] == 'admin'){
    echo
    '<div class="d-flex" id="wrapper"  >
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <img src="internshipproject/../resources/agbilogo.png" style="height: 60px; width: 60px; margin-top: 10px;" class="mx-auto d-block">
+      <img src="internshipproject/../resources/agbilogo.png" style="height: 65px; width: 65px; margin-top: 10px;" class="mx-auto d-block">      
       <div class="sidebar-heading sticky-top"> Welcome! '.'<b>'.$_SESSION['fname'].'</b></div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
