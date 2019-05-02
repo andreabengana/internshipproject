@@ -1,7 +1,5 @@
 <?php 
 
-include 'ChromePHP.php';
-
 if(isset($_POST['signup-btn'])){
 	require 'db.inc.php';
 
