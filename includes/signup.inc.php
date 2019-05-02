@@ -52,6 +52,7 @@ else{
 		mysqli_stmt_store_result($stmt);
 		$result = mysqli_stmt_num_rows($stmt);
 		if($result > 0){
+<<<<<<< HEAD
 			header("Location: ../addemployee.php?usernameoremailtaken");
 			exit();
 		}
@@ -70,6 +71,13 @@ else{
 				header("Location: ../addemployee.php?employeeadded");
 				exit();
 			}
+=======
+			header("Location: ../addemployee.php?usernametaken");
+			exit();
+		}
+		else{
+			$sql = "INSERT INTO users ";
+>>>>>>> d2230ef77a9b7ef5fd14f1d6b7b8b0d71c088320
 		}	
 	}	
 }
