@@ -51,9 +51,8 @@ if($_SESSION['usertype'] == 'admin'){
         <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add New Employee</a>
         <a href="signup.php" class="list-group-item list-group-item-action bg-light">Add New Manager</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">View Staff Members</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
+        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-danger" style="color: white">Logout</a>
       </div>
     </div>';
 }
@@ -67,7 +66,7 @@ elseif($_SESSION['usertype'] == 'staff'){
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Templates</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">My Projects</a>
-        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-light">Logout</a>
+        <a href="includes/logout.inc.php" class="list-group-item list-group-item-action bg-danger" style="color:">Logout</a>
       </div>
     </div>'
 ;
