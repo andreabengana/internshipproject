@@ -12,7 +12,6 @@ if(empty($mailuid) || empty($password)){
 	header("Location: ../login.php?emptyfields");
 	exit();
 }
-
 else{
 	$sql = "SELECT * FROM users WHERE user_uid=? OR user_email=?;";
 	$stmt = mysqli_stmt_init($conn);
