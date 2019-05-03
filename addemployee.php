@@ -25,7 +25,7 @@ if(!isset($_SESSION['userUid'])){
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 	<!--Custom CSS-->
-	<link rel="stylesheet" type="text/css" href="css/signupdesign.css">
+	<link rel="stylesheet" type="text/css" href="css/addemployeedesign.css">
 </head>
 <body>
 <div class="container">
@@ -35,7 +35,7 @@ if(!isset($_SESSION['userUid'])){
 				<a href="homepage.php" class="btn btn-danger float-left">Go Back</a><h2 style="color: white;">Add Employee</h2>
 			</div>
 			<div class="card-body">
-						<form id="form1" action="includes/signup.inc.php" method="POST">
+						<form id="form1" action="includes/addemployee.inc.php" method="POST">
 							<label for="row1"><h3> Tell me more about yourself! </h3></label>
   							<div class="form-row" id="row1">
     							<div class="form-group col-md-6">
